@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>350</width>
+    <height>250</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>350</width>
+    <height>250</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>350</width>
+    <height>250</height>
+   </size>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>MyCancelador 2.0</string>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame_2">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="topMargin">
+        <number>9</number>
+       </property>
+       <item>
+        <widget class="QTabWidget" name="tabWidget">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="tab_cancelamento">
+          <attribute name="title">
+           <string>Cancelamento</string>
+          </attribute>
+          <widget class="QFrame" name="frame_central">
+           <property name="geometry">
+            <rect>
+             <x>-30</x>
+             <y>-50</y>
+             <width>350</width>
+             <height>300</height>
+            </rect>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>350</width>
+             <height>300</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QFormLayout" name="formLayout">
+            <property name="formAlignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="leftMargin">
+             <number>50</number>
+            </property>
+            <property name="topMargin">
+             <number>30</number>
+            </property>
+            <property name="rightMargin">
+             <number>50</number>
+            </property>
+            <property name="bottomMargin">
+             <number>40</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_unidade_cancel">
+              <property name="text">
+               <string>Unidade:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QComboBox" name="comboBox_unidade_cancel">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="baseSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="editable">
+               <bool>false</bool>
+              </property>
+              <item>
+               <property name="text">
+                <string>Lima Machado</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Maria do Carmo</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Sete de Setembro</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Marina</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Morrinhos</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Rui Barbosa</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_balcao_cancel">
+              <property name="text">
+               <string>Balcão:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLineEdit" name="lineEdit_balcao_cancel">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_observacao_cancel">
+              <property name="text">
+               <string>Observação:     </string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLineEdit" name="lineEdit_observacao_cancel">
+              <property name="text">
+               <string>Substituído por </string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_usuario_cancel">
+              <property name="text">
+               <string>Usuário:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QLineEdit" name="lineEdit_usuario_cancel"/>
+            </item>
+            <item row="4" column="1">
+             <widget class="QPushButton" name="pushButton_confirmar_cancel">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Confirmar</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="tab_servico">
+          <attribute name="title">
+           <string>Tipo de serviço</string>
+          </attribute>
+          <widget class="QFrame" name="frame">
+           <property name="geometry">
+            <rect>
+             <x>-30</x>
+             <y>-10</y>
+             <width>361</width>
+             <height>221</height>
+            </rect>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QFormLayout" name="formLayout_10">
+            <property name="formAlignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="leftMargin">
+             <number>50</number>
+            </property>
+            <property name="topMargin">
+             <number>30</number>
+            </property>
+            <property name="rightMargin">
+             <number>50</number>
+            </property>
+            <property name="bottomMargin">
+             <number>40</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_unidade_tiposerv">
+              <property name="text">
+               <string>Unidade:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QComboBox" name="comboBox_unidade_tiposerv">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="baseSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="editable">
+               <bool>false</bool>
+              </property>
+              <item>
+               <property name="text">
+                <string>Lima Machado</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Maria do Carmo</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Sete de Setembro</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Marina</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Morrinhos</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Rui Barbosa</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_balcao_tiposerv">
+              <property name="text">
+               <string>Balcão:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLineEdit" name="lineEdit_balcao_tiposerv">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_tipoServico_tiposerv">
+              <property name="text">
+               <string>Tipo de Serviço:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QComboBox" name="comboBox_tipoServico_tiposerv">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="baseSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="editable">
+               <bool>false</bool>
+              </property>
+              <item>
+               <property name="text">
+                <string>Repasse PAF (Celebration)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Repasse PJ (Celebration</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Reversão Serviço Social (Celeb</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Vendas Sobre PAF (Celebration)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Venda Sobre PJ (Celebration)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Serviço IML</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Reversão Serviço Social</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Seguradora</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Varejo</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Vendas Sobre PAF</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Vendas Sobre PJ</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Particular (Celebration)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Particular</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Repasse PAF</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Repasse PJ</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Varejo (Celebration)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Serviço IML Prefeitura</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Serviço Social (Municipal)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Serviço Social Prefeitura</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Venda Sobre Seguradora</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Venda Sobre Seguradora (Cel</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Venda Sobre Serviço Social</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Venda Sobre Serviço Social (Ce</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_usuario_tiposerv">
+              <property name="text">
+               <string>Usuário:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QLineEdit" name="lineEdit_usurio_tiposerv">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QPushButton" name="pushButton_confirmar_tiposerv">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Confirmar</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>350</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <action name="actionCancelar">
+   <property name="text">
+    <string>Atualizar</string>
+   </property>
+  </action>
+  <action name="actionTipo_de_Servi_o">
+   <property name="text">
+    <string>Tipo de Serviço</string>
+   </property>
+  </action>
+  <action name="actionSaiur">
+   <property name="text">
+    <string>Sair</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
